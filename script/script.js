@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  submitButton.addEventListener('click', (event) => {
+ form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
               // Contrôle du nom et prénom
               document.getElementById('lname').addEventListener('input', (e) => {
